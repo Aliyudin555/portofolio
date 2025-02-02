@@ -13,7 +13,7 @@ const home = () => {
         <span className='home_education'>I'm a fullstack developer </span>
 
         <HeaderSocials/>
-        <a href='#contact' className='btn'>Hire me</a>
+        <a href='https://wa.me/6289652802457' className='btn'>Hire me</a>
       
         <ScrollDown/>
         
