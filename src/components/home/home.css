@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    
   }
 .home{
     position: relative;
@@ -10,7 +11,6 @@ html {
 }
 .intro{
     max-width: 540px;
-    /* background-color: aqua; */
     text-align: center;
     z-index: 1000;
 }

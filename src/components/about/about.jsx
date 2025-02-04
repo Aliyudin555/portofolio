@@ -19,47 +19,7 @@ I am interested in joining an innovative and collaborative team, where I can con
         </div>
       </div>
       <Skills/>
-      {/* <div className="services" id="services">
-          <div className="container">
-              <header className="section-header">
-                  <h6 className='section-title'>My Services</h6>
-                 
-              </header>
-              <div class="row">
-                  <div class="col-sm-6 col-md-3">
-                      <div class="single-service">
-                          <div class="service-icon"><i class="fa fa-code"></i></div>
-                          <h4>Web Development</h4>
-                          <p>Membangun website responsif dan dinamis sesuai kebutuhan Anda.</p>
-                      </div>
-                  </div>
-
-                  <div className="col-sm-6 col-md-3">
-                      <div class="single-service">
-                          <div class="service-icon"><i class="fa fa-paint-brush"></i></div>
-                          <h4>UI/UX Design</h4>
-                          <p>Mendesain antarmuka yang menarik dan ramah pengguna.</p>
-                      </div>
-                  </div>
-
-                  <div className="col-sm-6 col-md-3">
-                      <div className="single-service">
-                          <div class="service-icon"><i class="fa fa-chart-line"></i></div>
-                          <h4>Data analytics</h4>
-                          <p>pengumpulan, pengolahan, dan analisis data untuk pengambilan keputusan</p>
-                      </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-3">
-                      <div class="single-service">
-                          <div class="service-icon"><i class="fa fa-database"></i></div>
-                          <h4>Database Admin</h4>
-                          <p>Mengelola dan mengoptimalkan database untuk kinerja yang efisien.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div> */}
+     
     </section>
   )
 }

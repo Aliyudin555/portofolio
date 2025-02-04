@@ -2,3 +2,8 @@
   margin-left: 110px;
   scroll-behavior: smooth;
 }
+@media (max-width: 768px) {
+  .main {
+    margin-left: 0;
+  }
+}

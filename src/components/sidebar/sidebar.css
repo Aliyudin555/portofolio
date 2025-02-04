@@ -1,7 +1,21 @@
-html {
-  scroll-behavior: smooth;
-}
-.sidebar {
+
+   html {
+    scroll-behavior: smooth;
+  }
+  
+  :root {
+    --body-color: #ffffff;
+    --title-color: #2c3e50;
+    --font-bold: 600;
+    --small-font-size: 0.75rem;
+  }
+  
+  body.dark-mode {
+    --body-color: #2c3e50;
+    --title-color: #ecf0f1;
+  }
+  
+  .sidebar {
     position: fixed;
     left: 0;
     top: 0;
@@ -13,32 +27,51 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-    z-index: 10;
+    z-index: 100;
+    transition: background 0.3s ease;
   }
   
   .sidebar .nav_logo img {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
   
-  .nav_list{
+  .nav_list {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-}
-.nav_link{
+  }
+  
+  .nav_link {
     font-size: 1.5rem;
     color: var(--title-color);
     font-weight: var(--font-bold);
-    transition: .3s;
-}
-.nav_link:hover{
-    color: hsl(200, 100%, 70%); 
-}
+    transition: 0.3s;
+  }
   
-  /* Hamburger Button */
+  .nav_link:hover {
+    color: hsl(200, 100%, 70%);
+  }
+  
+  .theme-toggle {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--title-color);
+    /* margin-bottom: 20px; */
+    text-align: center;
+    transition: color 0.3s ease;
+    margin-top: 2rem;
+  }
+  
+  .theme-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  body.dark-mode .theme-icon {
+    transform: rotate(180deg);
+  }
+  
   .hamburger {
     position: fixed;
     top: 20px;
@@ -46,19 +79,19 @@ html {
     font-size: 30px;
     background: none;
     border: none;
-    color: #2c3e50;
+    color: var(--title-color);
     cursor: pointer;
     z-index: 1000;
-    display: none; /* Hidden by default, shown in mobile view */
+    display: none;
   }
   
-.copyright{
+  .copyright {
     color: hsl(245, 15%, 65%);
     font-size: var(--small-font-size);
     transform: rotate(-180deg);
     writing-mode: vertical-rl;
-}
-  /* Responsive Styles */
+  }
+  
   @media (max-width: 768px) {
     .hamburger {
       display: block;
@@ -66,10 +99,10 @@ html {
   
     .sidebar {
       transform: translateX(-100%);
+      transition: transform 0.3s ease;
     }
-  
+    
     .sidebar.open {
       transform: translateX(0);
     }
-  }
-  
+  } 

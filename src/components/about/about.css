@@ -1,4 +1,4 @@
-html {
+/* html {
     scroll-behavior: smooth;
   }
 .about_container{
@@ -10,7 +10,7 @@ html {
     background-color:var(--container-color);
     box-shadow: var(--shadow);
     border-radius: var(--border-radius);
-    /* grid-template-columns: repeat(2,1fr); */
+ 
     column-gap: 1.875rem;
     align-items: flex-start;
     position: relative;
@@ -31,7 +31,7 @@ html {
     text-align: justify;
 }
 
-/* service */
+
 .services {
     background-color: #f9f9f9;
     padding: 50px 0;
@@ -84,7 +84,7 @@ html {
     line-height: 1.6;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .col-sm-6 {
         width: 100%;
@@ -97,4 +97,84 @@ html {
         float: left;
         width: 25%;
     }
-}
+} */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .about_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .about_img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  
+  .about_data {
+    padding: 1.5rem;
+    background-color: var(--container-color);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    display: grid;
+    gap: 1rem;
+    position: relative;
+  }
+  
+  .about_data::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid var(--container-color);
+    position: absolute;
+    left: -0.93rem;
+    top: 20%;
+  }
+  
+  .about_description {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+  
+  /* .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  } */
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about_container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .about_data::before {
+      display: none;
+    }
+  
+    .about_img {
+      max-width: 100%;
+      margin: 0 auto;
+      display: none;
+    }
+  
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+    }
+  } 

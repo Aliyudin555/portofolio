@@ -115,3 +115,32 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .work_container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .work_container {
+      grid-template-columns: 1fr;
+    }
+  
+    .work_filters {
+      gap: 1rem;
+    }
+  
+    .work_button, .work_button2 {
+      bottom: 1rem;
+      left: 1rem;
+    }
+  
+    .work_button2 {
+      left: 4rem;
+    }
+  } 
+  
