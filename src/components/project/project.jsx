@@ -14,9 +14,9 @@ const Project = () => {
 
   return (
     <section className='work container section' id='project'>
-      <h2 className='section_title'>My Projects</h2>
+      <h2 data-aos="zoom-in" className='section_title'>My Projects</h2>
 
-      <div className='work_filters'>
+      <div data-aos="zoom-in" className='work_filters'>
         <span className='work_item' onClick={() => FilterItem('All')}>All</span>
         <span className='work_item' onClick={() => FilterItem('Game')}>Game</span>
         <span className='work_item' onClick={() => FilterItem('Web')}>Web</span>
@@ -25,7 +25,7 @@ const Project = () => {
 
       <div className='work_container grid'>
         {items.map(({ id, image, title, category, link, github }) => (
-          <div className='work_card' key={id}>
+          <div data-aos="zoom-in-up" className='work_card' key={id}>
             <div className='work_thumbnail'>
               <img src={image} alt={title} className='work_img' />
               <div className='work_mask'></div>

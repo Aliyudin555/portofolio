@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeaderSocials = () => {
   return (
-    <div className='home_socials'>
+    <div data-aos="zoom-in-up" className='home_socials'>
         <a href='https://www.instagram.com/aliyudin_555/' className='home_social-link' target="_blank">
         <i class="fa-brands fa-instagram"></i>
         </a>

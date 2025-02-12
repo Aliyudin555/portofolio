@@ -29,7 +29,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container" >
       <button className="hamburger" onClick={toggleSidebar}>
         ☰
       </button>

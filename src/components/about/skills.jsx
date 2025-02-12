@@ -29,8 +29,8 @@ const skills = [
 const SkillSection = () => {
   return (
     <div className="skills container" id="skills">
-      <header class="section-header">
-          <h6 className='section-title'>My Skills</h6>
+      <header data-aos="fade-down" class="section-header">
+          <h6  className='section-title'>My Skills</h6>
       </header>
       <Swiper
         spaceBetween={20}
@@ -38,7 +38,7 @@ const SkillSection = () => {
         loop={true}
         autoplay={{ delay: 2000, disableOnInteraction: false }}
         modules={[Autoplay]}
-        className="skill-slider"
+        className="skill-slider" 
       >
         {skills.map((skill, index) => (
           <SwiperSlide key={index} className="skill-slide">
