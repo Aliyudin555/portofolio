@@ -10,11 +10,16 @@ const about = () => {
         <img  data-aos="fade-right" src={About} alt='about' className='about_img' />
         <div className='about_data grid'>
           <div data-aos="fade-left" className='about_info'>
-            <p className='about_description'>I am a 6th semester student at Universitas Muhammadiyah Surakarta, majoring in Informatics Engineering. During my studies, I actively developed skills in software engineering, data analysis, and web development.
-I have a strong foundation in front-end technologies such as HTML, CSS, JavaScript, and Bootstrap, as well as back-end using MySQL, PHP, and Laravel. With this combination, I am able to build functional, responsive, and user-friendly web solutions.
-I am interested in joining an innovative and collaborative team, where I can contribute optimally while continuing to learn to develop my abilities.
+            <p className='about_description'>Lulusan S1 Teknik Informatika dari Universitas Muhammadiyah Surakarta (2026) dengan fondasi 
+yang kuat dalam rekayasa perangkat lunak, analisis sistem, dan desain UI/UX. Memiliki keahlian 
+praktis dalam pengembangan web menggunakan JavaScript, PHP (Laravel), Java, dan MySQL, 
+serta manajemen versi dengan Git. Mampu menganalisis data untuk menghasilkan solusi sistem 
+yang efisien dan berpusat pada pengguna. Memiliki kemampuan adaptasi yang baik untuk bekerja 
+secara mandiri maupun berkolaborasi dalam tim. Sangat antusias untuk memulai karier di bidang 
+teknologi informasi dan berkontribusi dalam menciptakan solusi teknologi yang inovatif bagi 
+perusahaan.
             </p>
-            <a href='https://drive.google.com/file/d/13AGjItsmIDyOsnyfIMqyaLqqY-QtVwQj/view?usp=sharing' target="_blank" className='btn'>Dwonload CV</a>
+            <a href='https://drive.google.com/file/d/1s3IeGS9omLsNGYdE8jIX49_tzA5MJ06X/view?usp=sharing' target="_blank" className='btn'>Dwonload CV</a>
           </div>
         </div>
       </div>
